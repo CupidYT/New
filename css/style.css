@@ -1,0 +1,111 @@
+@font-face {
+    font-family: 'T-Star Pro';
+    font-style: normal;
+    font-weight: normal;
+    src: local('T-Star Pro Regular'), url('../fonts/TStarPro/TStarProRegular.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'RF Dewi Condensed';
+    src: url('../fonts/RFDewi/RFDewiCondensed-Regular.eot');
+    src: local('RF Dewi Condensed Regular'), local('RFDewiCondensed-Regular'),
+        url('../fonts/RFDewi/RFDewiCondensed-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/RFDewi/RFDewiCondensed-Regular.woff2') format('woff2'),
+        url('../fonts/RFDewi/RFDewiCondensed-Regular.woff') format('woff'),
+        url('../fonts/RFDewi/RFDewiCondensed-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.container{
+    max-width: 1410px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+
+}
+
+body{
+    color: #fff;
+    font-family: 'T-Star Pro';
+    font-size: 18px;
+    line-height: 24px;
+}
+
+li {
+    list-style-type: none;
+}
+
+header{
+    min-width: 1280px;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.logo{
+    position: relative;
+    left: 1%;
+}
+
+.logo1{
+    position: relative;
+    left: 1%;
+    width: 100px;
+}
+
+.topmenu{
+    display: inline-flex;
+    padding: 0 380px 0 141px ;
+}
+
+.topmenu li{
+    padding: 15px 30px;
+    text-transform: uppercase;
+}
+
+.lang{
+    width: 140px;
+    height: 48px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(217, 219, 221, 0.4);
+    border-radius: 100px;
+}
+
+.ul-lang{
+    padding-left: 9.5px;
+    margin: 0;
+    background-color: transparent;
+    font-family: 'T-Star Pro';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    color: #fff;
+}
+
+.nav-btn{
+    position: relative;
+    left: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 198px;
+    height: 48px;
+    background: #B2071E;
+    border-radius: 5px;
+}
+
+footer{
+    background: #222327;
+}
