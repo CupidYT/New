@@ -86,7 +86,6 @@ a{
 
 .ul-lang{
     padding-left: 9.5px;
-    margin: 0;
     background-color: transparent;
     font-family: 'T-Star Pro';
     font-style: normal;
@@ -94,6 +93,7 @@ a{
     font-size: 18px;
     line-height: 24px;
     color: #fff;
+    border: 0;
 }
 
 .nav-btn{
