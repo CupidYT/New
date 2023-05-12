@@ -44,17 +44,12 @@ header{
 .header{
     display: flex;
     align-items: center;
+    justify-content: space-around;
 }
 
 a{
     text-decoration: none;
     color: #fff;
-}
-
-.logo{
-    position: relative;
-    left: 1%;
-    padding: 9px 0 9px 50px;
 }
 
 .logo1{
@@ -65,12 +60,15 @@ a{
 
 .topmenu{
     display: inline-flex;
-    padding: 0 0 0 141px ;
 }
 
 .topmenu li{
     padding: 15px 30px;
     text-transform: uppercase;
+}
+
+.header_right{
+    display: inline-flex;
 }
 
 .lang{
@@ -80,8 +78,7 @@ a{
     align-items: center;
     justify-content: center;
     border: 1px solid rgba(217, 219, 221, 0.4);
-    border-radius: 100px;
-    margin-left: 320px;
+    border-radius: 100px;   
 }
 
 .ul-lang{
@@ -94,6 +91,15 @@ a{
     line-height: 24px;
     color: #fff;
     border: 0;
+}
+
+.arrow{
+    padding-left: 12px;
+}
+
+.arrow-vertical{
+    rotate: -90deg;
+    height: 10px;
 }
 
 .nav-btn{
@@ -113,7 +119,7 @@ footer{
     background: #222327;
 }
 
-.box{
+.row{
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(3, 1fr);
@@ -141,7 +147,7 @@ footer{
     text-underline-offset: 10px;
 }
 
-.col4 li{
+.col-4 li{
     padding: 0 0 12px 0;
     opacity: 0.6;
 }
