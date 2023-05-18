@@ -475,12 +475,19 @@ h3{
     background-image: url("../images/card_img-2.jpg");
 }
 
-.proiecte_line{
+.proiecte_line-span{
     width: 100%;
     background-color: #D9DBDD;
-    height: 2px;
+    height: 1px;
+    margin-bottom: 35px;
     grid-column: 1/-1;
     grid-row: 3/4;
+}
+
+.proiecte_line{
+    grid-column: 1/-1;
+    grid-row: 3/4;
+    display: inherit;
 }
 
 .proiecte_btn{
@@ -491,4 +498,36 @@ h3{
     display: flex;
     gap: 25px;
     grid-row: 4/5;
+    align-items: end;
+}
+
+.proiecte-text-1 h2{
+    margin-bottom: 50px;
+}
+
+.market{
+    display: flex;
+}
+
+.market_text{
+    display: flex;
+    position: absolute;
+    align-self: end;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    color: #fff;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+}
+
+.market_text p{
+    width: 600px;
+}
+
+.proiecte_market{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
 }
