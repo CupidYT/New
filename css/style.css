@@ -50,6 +50,16 @@ header{
     line-height: 24px;
 }
 
+.swiper {
+    width: 100%;
+    height: 100%;
+    margin-top: 125px;
+  }
+
+  .swiper-slide img {
+    display: block;
+  }
+
 .header{
     display: flex;
     align-items: center;
@@ -315,7 +325,7 @@ h3{
 
 .slide{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 }
 

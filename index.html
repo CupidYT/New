@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Di Trade</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
 </head>
 <body>
     <header>
@@ -81,7 +82,7 @@
                             </button>
                         </div>
                     </div>
-                    <div class="carousel_layel">
+               <!--     <div class="carousel_layel">
                         <div class="slide_arrow-prev">
                             <img src="images/car_arrow.svg" alt="">
                         </div>
@@ -115,7 +116,73 @@
                             <img src="images/car_arrow.svg" alt="">
                         </div>
                     </div>
+                </div>  -->
+
+                <!-- Swiper -->
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="slide">
+                            <div class="slide_info">
+                                <div class="slide-content">
+                                    <div class="slide_img-brand">
+                                        <img class="" src="images/cs1.svg" alt="">
+                                    </div>
+                                    <div class="slide_text">
+                                        <h3>
+                                            SYSHP MINI SPLIT ODU 06 Q + HYDRO 06 Q (fără vas de acumulare)
+                                        </h3>
+                                        <p class="p">
+                                            Pompele de căldură „aer-apă” folosesc energia solară gratuită a aerului din jur pentru a încălzi apa.
+                                        </p>
+                                        <a href="#">
+                                            <p>
+                                            Detalii produs
+                                            </p>
+                                            <img class="" src="images/red_arrow.svg" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slide_img-product">
+                                <img class="cs1" src="images/cs1.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slide">
+                            <div class="slide_info">
+                                <div class="slide-content">
+                                    <div class="slide_img-brand">
+                                        <img class="" src="images/cs1.svg" alt="">
+                                    </div>
+                                    <div class="slide_text">
+                                        <h3>
+                                            SYSHP MINI SPLIT ODU 06 Q + HYDRO 06 Q (fără vas de acumulare)
+                                        </h3>
+                                        <p class="p">
+                                            Pompele de căldură „aer-apă” folosesc energia solară gratuită a aerului din jur pentru a încălzi apa.
+                                        </p>
+                                        <a href="#">
+                                            <p>
+                                            Detalii produs
+                                            </p>
+                                            <img class="" src="images/red_arrow.svg" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slide_img-product">
+                                <img class="cs1" src="images/cs1.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">Slide 3</div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
                 </div>
+
             </div>
         </section>
 
@@ -499,5 +566,18 @@
             </div>
         </div>
     </footer> 
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+          <script>
+    var swiper = new Swiper(".mySwiper", {
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
+
+
 </body>
 </html>
