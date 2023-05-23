@@ -17,8 +17,9 @@
     font-style: normal;
 }
 
-h1{
+h1,h2,h3,h4,h5,h6{
     margin: 0;
+    padding: 0;
 }
 .container{
     max-width: 1400px;
@@ -35,32 +36,40 @@ body{
 }
 ul{
     padding: 0;
+    margin: 0;
 }
 
 li {
     list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
 header{
     position: absolute;
     color: #fff;
-    min-width: 1900px;
+    width: 100%;
     font-family: 'T-Star Pro';
     font-size: 18px;
     line-height: 24px;
 }
 
-.swiper_carousel {
+.carousel_section{
+    overflow: hidden;
+}
+
+.slider_carousel {
     width: 100%;
     height: 100%;
     margin-top: 125px;
+    position: relative;
   }
 
   .swiper-slide img {
     display: block;
   }
 
-.swiper_parteners{
+.slider_parteners{
     width: 100%;
     height: 100%;
     margin-top: 80px;
@@ -70,7 +79,15 @@ header{
 .header{
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
+}
+
+.header_logo{
+    margin-left: 50px;
+}
+
+.header_tools{
+    margin-right: 50px;
 }
 
 a{
@@ -87,8 +104,12 @@ a{
 }
 
 .topmenu li{
-    padding: 15px 30px;
+    padding-right:30px;
     text-transform: uppercase;
+}
+
+.topmenu li:last-of-type{
+    padding: 0;
 }
 
 .header_tools{
@@ -140,16 +161,32 @@ footer{
     background: #222327;
 }
 
+.footer_line{
+    margin-bottom: 45px;
+}
+
+.footer_info{
+    margin-bottom: 45px;
+}
+
+.footer_link h3{
+    padding-bottom: 25px;
+}
+
+.footer_link li:last-of-type{
+    padding: 0;
+}
+
 .footer_top{
     display: inline-grid;
     justify-content: space-around;
     color: #fff;
+    padding-bottom: 95px;
+    padding-top: 95px;
 }
 
 .row{
     display: grid;
-    gap: 20px;
-    padding: 95px 0 0 0;
 }
 
 .subscribe{
@@ -177,7 +214,6 @@ input::placeholder{
     line-height: 30px;
     letter-spacing: -0.2px;
     color: #FFFFFF;
-    padding: 0 0 32px 0;
     text-decoration: underline;
     text-decoration-color: red;
     text-underline-offset: 10px;
@@ -241,17 +277,23 @@ h3{
     display: inline-flex;
 }
 
+.footer_news h3{
+    padding-bottom: 25px;
+}
+
 .footer_news-element{
     display: flex;
 }
 
-.top{
-    /**
-    opacity: 0.6;
-    top: -100px;
-    position: absolute;
-    z-index: -1;
-    left: 0;**/
+.footer_contact li{
+    padding-bottom: 32px;
+}
+
+.footer_contact li:last-of-type{
+    padding: 0;
+}
+
+.top_section{
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../images/bg.jpg");
     background-size: cover;
     background-repeat: no-repeat;
@@ -259,7 +301,7 @@ h3{
 }
 
 .top_container{
-    padding-top: 315px;
+    padding-top: 280px;
     padding-bottom: 280px;
     width: 700px;
 }
@@ -370,7 +412,7 @@ h3{
     rotate: 180deg;
 }
 
-.service{
+.service_section{
     background-color: #F1F2F3;
 }
 
@@ -548,7 +590,7 @@ h3{
     gap: 30px;
 }
 
-.about{
+.about_section{
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../images/about-img.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -591,6 +633,7 @@ h3{
     font-weight: 700;
     font-size: 24px;
     line-height: 30px;
+    margin-bottom: 30px;
 }
 
 .column_item p{
@@ -602,8 +645,13 @@ h3{
 .column_item hr{
     background: rgba(255, 255, 255, 0.6);
     width: 100%;
-    height: 2px;
+    height: 1px;
     border: 0;
+    margin-bottom: 30px;
+}
+
+.blog_section{
+    background: #F7F8FA;
 }
 
 .blog_info_block{
@@ -676,8 +724,7 @@ h3{
 }
 
 .parteners_container{
-    padding-bottom: 50px;
-    padding-top: 80px;
+    overflow: hidden;
 }
 
 .parteners_logo{
@@ -685,13 +732,15 @@ h3{
     justify-content: space-between;
 }
 
-.parteners_bullet{
-    display: flex;
-    gap: 10px;
-    justify-content: center;
+.swiper-horizontal > .swiper-pagination-bullets.swiper-pagination-bullets-dynamic, .swiper-pagination-horizontal.swiper-pagination-bullets.swiper-pagination-bullets-dynamic{
+    position: relative;
 }
 
-.contact{
+.swiper-wrapper{
+    align-items: center;
+}
+
+.contact_section{
     background: url(../images/contact_bg.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -710,6 +759,7 @@ h3{
     font-size: 36px;
     line-height: 44px;
     width: 570px;
+    margin-bottom: 30px;
 }
 
 .contact_text p{
@@ -717,6 +767,7 @@ h3{
     font-size: 18px;
     line-height: 28px;
     width: 450px;
+    margin-bottom: 65px;
 }
 
 .contact_text-1{
