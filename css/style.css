@@ -450,10 +450,22 @@ h3{
     justify-content: center;
     align-items: flex-start;
     padding: 48px;
+    position: relative;
+}
+
+.card_img{
+    position: absolute;
+    left: 0;
+}
+.card_img img{
+    border-radius: 20px;
+    width: 685px;
+    height: 355px;
 }
 
 .card_img-ico{
     margin-bottom: 35px;
+    z-index: 1;
 }
 
 .card_text h2{
@@ -466,6 +478,10 @@ h3{
     width: 594px;
     margin: 0px;
     margin-bottom: 35px;
+}
+
+.card_text{
+    z-index: 1;
 }
 
 .carousel_btn-1{
@@ -525,14 +541,6 @@ h3{
     padding-bottom: 125px;
 }
 
-.card_img-1{
-    background-image: url("../images/card_img-1.jpg");
-}
-
-.card_img-2{
-    background-image: url("../images/card_img-2.jpg");
-}
-
 .proiecte_line-span{
     width: 100%;
     background-color: #D9DBDD;
@@ -578,10 +586,6 @@ h3{
     padding-left: 30px;
     padding-right: 30px;
     padding-bottom: 30px;
-}
-
-.market_text p{
-    width: 600px;
 }
 
 .proiecte_market{
