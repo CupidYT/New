@@ -54,6 +54,11 @@ header{
     line-height: 24px;
 }
 
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
 .carousel_section{
     overflow: hidden;
 }
@@ -76,47 +81,41 @@ header{
     margin-bottom: 80px;
 }
 
-.header{
+.nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin: 10px 50px;
 }
 
-.header_logo{
-    margin-left: 50px;
-}
-
-.header_tools{
-    margin-right: 50px;
-}
-
-a{
-    text-decoration: none;
-    color: inherit;
+.logo{
+    display: flex;
 }
 
 .logo1{
     width: 100px;
 }
 
-.topmenu{
-    display: inline-flex;
-}
-
-.topmenu li{
-    padding-right:30px;
+.nav_menu{
+    display: flex;
+    gap: 32px;
     text-transform: uppercase;
+    margin-right: auto;
+    margin-left: 140px;
 }
 
-.topmenu li:last-of-type{
-    padding: 0;
+.nav-link{
+    display: flex;
+    gap: 10px;
+    align-items: center;
 }
 
-.header_tools{
-    display: inline-flex;
+.nav_btn{
+    display: flex;
+    gap: 30px;
 }
 
-.lang{
+.nav_lang{
     width: 140px;
     height: 48px;
     display: inline-flex;
@@ -124,22 +123,16 @@ a{
     justify-content: center;
     border: 1px solid rgba(217, 219, 221, 0.4);
     border-radius: 100px;   
+    gap: 8px;
 }
 
-.ul-lang{
-    padding-left: 9.5px;
+.nav_lang-selector{
     background-color: transparent;
     font-family: 'T-Star Pro';
-    font-style: normal;
     font-weight: 700;
     font-size: 18px;
-    line-height: 24px;
     color: #fff;
     border: 0;
-}
-
-.arrow{
-    padding-left: 12px;
 }
 
 .arrow-vertical{
@@ -148,12 +141,24 @@ a{
     padding-right: 2px;
 }
 
-.nav_btn{
-    margin-left: 30px;
+.nav_contact-btn{
+    width: 198px;
+    height: 48px;
+    background: #B2071E;
+    border-radius: 5px;
+    border: 0;
     display: flex;
-    flex-direction: row;
     justify-content: center;
     align-items: center;
+}
+
+.nav_contact-link{
+    background: transparent;
+    border: 0;
+    color: #fff;
+    font-family: 'T-Star Pro';
+    font-weight: 700;
+    font-size: 18px;
 }
 
 
@@ -298,6 +303,7 @@ h3{
     background-size: cover;
     background-repeat: no-repeat;
     color: #fff;
+    height: 100vh;
 }
 
 .top_container{
