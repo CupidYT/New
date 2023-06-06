@@ -52,6 +52,7 @@ header{
     font-family: 'T-Star Pro';
     font-size: 18px;
     line-height: 24px;
+    z-index: 10;
 }
 
 a{
@@ -141,7 +142,7 @@ a{
     padding-right: 2px;
 }
 
-.nav_contact-btn{
+.red_btn{
     width: 198px;
     height: 48px;
     background: #B2071E;
@@ -152,7 +153,12 @@ a{
     align-items: center;
 }
 
-.nav_contact-link{
+.red_btn-main{
+    width: 170px;
+    height: 48px;
+}
+
+.red_btn-link{
     background: transparent;
     border: 0;
     color: #fff;
@@ -298,27 +304,29 @@ h3{
     padding: 0;
 }
 
-.top_section{
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../images/bg.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    color: #fff;
+.hero_items{
+    position: absolute;
+}
+
+.hero-img{
     height: 100vh;
+    width: 100vw;
+    filter: brightness(0.5);
 }
 
-.top_container{
+.hero_content{
     padding-top: 280px;
-    padding-bottom: 280px;
     width: 700px;
+    color: #fff;
 }
 
-.top_title{
+.content-title{
     font-size: 44px;
     line-height: 80px;
     margin-bottom: 25px; 
 }
 
-.top_subtitle{
+.content-subtitle{
     width: 480px;  
     line-height: 28px;
     margin-bottom: 30px;
@@ -740,10 +748,6 @@ h3{
 .parteners_logo{
     display: flex;
     justify-content: space-between;
-}
-
-.swiper-horizontal > .swiper-pagination-bullets.swiper-pagination-bullets-dynamic, .swiper-pagination-horizontal.swiper-pagination-bullets.swiper-pagination-bullets-dynamic{
-    position: relative;
 }
 
 .swiper-wrapper{

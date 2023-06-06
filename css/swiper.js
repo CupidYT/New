@@ -5,6 +5,19 @@ var swiper = new Swiper(".slider_carousel", {
   },
 });
 
+var swiper = new Swiper(".slider_hero", {
+  spaceBetween: 0,
+  centeredSlides: true,
+  autoplay: {
+    delay: 5000,
+    disableOnInteraction: false,
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    dynamicBullets: true,
+  },
+});
+
 
 var swiper = new Swiper(".slider_parteners", {
     slidesPerView: 6,
