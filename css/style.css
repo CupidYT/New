@@ -17,22 +17,42 @@
     font-style: normal;
 }
 
-h1,h2,h3,h4,h5,h6{
+h1,h2,h3,h4,h5,h6, p{
     margin: 0;
     padding: 0;
 }
+
+h3{
+    font-family: 'RF Dewi';
+    font-size: 18px;
+}
+
 .container{
     max-width: 1400px;
     margin: 0 auto;
 
 }
-
+html{
+    -webkit-text-size-adjust: 100%;
+}
 body{
     font-family: 'RF Dewi';
     font-size: 18px;
     line-height: 24px;
     padding: 0;
     margin: 0;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+}
+main {
+    display: block;
+}
+img {
+    vertical-align: middle;
+    border-style: none;
+}
+*, ::after, ::before {
+    box-sizing: border-box;
 }
 ul{
     padding: 0;
@@ -53,6 +73,7 @@ header{
     font-size: 18px;
     line-height: 24px;
     z-index: 10;
+    border-bottom: 1px solid rgba(217, 219, 221, 0.4);
 }
 
 a{
@@ -69,10 +90,6 @@ a{
     height: 100%;
     margin-top: 125px;
     position: relative;
-  }
-
-  .swiper-slide img {
-    display: block;
   }
 
 .slider_parteners{
@@ -125,6 +142,10 @@ a{
     border: 1px solid rgba(217, 219, 221, 0.4);
     border-radius: 100px;   
     gap: 8px;
+}
+
+.nav_lang-item{
+    display: flex;
 }
 
 .nav_lang-selector{
@@ -190,7 +211,7 @@ footer{
 
 .footer_top{
     display: inline-grid;
-    justify-content: space-around;
+    justify-content: space-between;
     color: #fff;
     padding-bottom: 95px;
     padding-top: 95px;
@@ -271,16 +292,11 @@ input::placeholder{
     opacity: 0.6;
 }
 
-h3{
-    font-family: 'RF Dewi';
-    font-size: 18px;
-}
-
-.footer_politica{
+.footer_policy{
     display: flex;
 }
 
-.footer_politica-item-2{
+.footer_policy-item-2{
     padding-left: 45px;
 }
 
@@ -304,32 +320,53 @@ h3{
     padding: 0;
 }
 
-.hero_items{
-    position: absolute;
+.swiper-slide, swiper-slide {
+    flex-shrink: 0;
+    width: 100%;
+    height: 100%;
 }
 
+.swiper-pagination {
+    --swiper-theme-color:#B2071E;
+   }
+
 .hero-img{
-    height: 100vh;
     width: 100vw;
+    height: 100vh;
     filter: brightness(0.5);
 }
 
-.hero_content{
-    padding-top: 280px;
-    width: 700px;
-    color: #fff;
+.gradient-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0) 100%);
+    z-index: 1;
 }
 
+
+.hero_content{
+    position: absolute;
+    top: 28%;
+    left: 14%;
+    color: #fff;
+    width: 700px;
+}
+
+
 .content-title{
-    font-size: 44px;
-    line-height: 80px;
-    margin-bottom: 25px; 
+    line-height: 77px;
+    font-size: 64px;
+    font-weight: 700;
+    padding-bottom: 25px; 
 }
 
 .content-subtitle{
     width: 480px;  
     line-height: 28px;
-    margin-bottom: 30px;
+    padding-bottom: 30px;
 }
 
 .info_btn{
